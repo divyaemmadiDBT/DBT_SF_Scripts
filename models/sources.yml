@@ -5,6 +5,8 @@ sources:
     tables:
       - name: cust456
       - name: orders456
+      - name: SALES11
+      - name: ORDERS
       - name: SALES22
       - name: EMPLOYEE_TABLE_INCR
       - name: CUSTOMERS_TAB
