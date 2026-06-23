@@ -7,9 +7,13 @@ models:
         - not_null
       - name: shipped_status
         tests:
-
         - accepted_values:
             arguments: 
              values: ['Shipped','Returned']
-        
+         - name: customer_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_test_ex1')
+                field: id
       
