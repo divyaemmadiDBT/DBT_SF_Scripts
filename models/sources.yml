@@ -8,6 +8,7 @@ sources:
       - name: SALES11
       - name: ORDERS
       - name: USERS1_DTLS_T
+      - name: UTILSSTAREX
       - name: SALES22
       - name: EMPLOYEE_TABLE_INCR
       - name: CUSTOMERS_TAB
