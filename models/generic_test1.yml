@@ -1,0 +1,27 @@
+models:
+  - name: USERS1_DTLS_T
+    columns:
+      - name: id
+        data_tests:
+        - unique
+        - dbt_validate_mail      
+  - name: stg_test_ex1
+    columns:
+      - name: id
+        tests: 
+        - unique
+        - not_null
+        #- relationships:
+         #  arguments:
+          #  to: ref('orders_test_relationship')
+           # field: customer_id
+      - name: shipped_status
+        tests:
+        - accepted_values:
+            arguments: 
+             values: ['Shipped','Returned']
+      - name: mail_id
+        data_tests:
+          - not_null
+          - dbt_validate_mail
+

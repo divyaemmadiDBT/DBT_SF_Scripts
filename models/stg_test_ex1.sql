@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('new_schema', 'SALES11') }}

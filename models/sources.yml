@@ -1,0 +1,19 @@
+sources:
+  - name: new_schema
+    database: DBT_DEV_DB
+    schema: RAW_SC
+    tables:
+      - name: cust456
+      - name: orders456
+      - name: SALES11
+      - name: ORDERS
+      - name: USERS1_DTLS_T
+      - name: UTILSSTAREX
+      - name: SALES22
+      - name: EMPLOYEE_TABLE_INCR
+      - name: CUSTOMERS_TAB
+  - name: macro_schema
+    database: DBT_DEV_DB
+    schema: MACRO_SC
+    tables:
+      - name: EMPLOYEE_T

@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('new_schema', 'USERS1_DTLS_T') }}
